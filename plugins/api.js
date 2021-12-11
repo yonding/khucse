@@ -9,7 +9,7 @@ export default function ({ $axios }, inject) {
     })
 
     // Set baseURL to something different
-    api.setBaseURL('http://localhost:8080')
+    api.setBaseURL('https://khucse-server.herokuapp.com/')
 
     // Inject to context as $api
     inject('api', api)
