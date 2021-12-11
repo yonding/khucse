@@ -32,7 +32,7 @@
     methods:{
       async loginWithEmail(){
         // eslint-disable-next-line no-unused-vars
-        const data = await this.$axios.$post(`/user/login`,{email:this.email, password: this.password});
+        const data = await this.$api.$post(`/user/login`,{email:this.email, password: this.password});
 
         if (data.error) {
         return;
